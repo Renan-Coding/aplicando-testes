@@ -31,23 +31,23 @@ Teste BDD com SpecFlow:
 dotnet test APIFinancas.Especificacoes/APIFinancas.Especificacoes.csproj
 ```
 
-Ao final de cada comando, o terminal deve exibir `Passed!`, indicando que todos os testes daquele projeto foram executados com sucesso. Os prints adicionados neste README foram tirados exatamente dessas execuções no terminal.
+Ao final de cada comando, o terminal deve exibir `Passed!`, o que indica que todos os testes foram executados com sucesso. Os prints adicionados aqui foram tirados dessas execuções no terminal.
 
 ## Testes de Unidade
 
-Testes de unidade validam uma menor parte isolada da aplicação. Aqui, o método `FahrenheitParaCelsius` é testado com xUnit usando `Theory` e `InlineData`, permitindo executar o mesmo teste para várias entradas e saídas esperadas.
+Testes de unidade validam uma parte isolada da aplicação. Aqui, o método `FahrenheitParaCelsius` é testado com xUnit usando `Theory` e `InlineData`, permitindo executar o mesmo teste para várias entradas e saídas esperadas.
 
 Cenário 1: ao informar `32` Fahrenheit, o resultado esperado é `0` Celsius.
 
 Cenário 2: ao informar `212` Fahrenheit, o resultado esperado é `100` Celsius.
 
-Print do teste executado:
+Print do teste feito:
 
 ![Teste de unidade](docs/images/teste-unidade.png)
 
 ## Mock Objects
 
-Mock objects simulam dependências externas para testar a regra de negócio sem depender de serviços reais. Neste projeto, a interface `IServicoConsultaCredito` é simulada com Moq, e o resultado da classe `AnaliseCredito` é validado com FluentAssertions.
+Mock objects simulam dependências externas para testar a regra de negócio sem depender de serviços reais. A interface `IServicoConsultaCredito` é simulada com Moq, e o resultado da classe `AnaliseCredito` é validado com FluentAssertions.
 
 Cenário 1: quando o serviço retorna `null` para um CPF inválido, o status esperado é `ParametroEnvioInvalido`.
 
@@ -59,7 +59,7 @@ Print do teste executado:
 
 ## SpecFlow
 
-SpecFlow permite escrever testes no formato BDD, descrevendo o comportamento esperado em uma linguagem próxima da regra de negócio. Neste projeto, a funcionalidade de cálculo de juros compostos é descrita em um arquivo `.feature`, e cada frase do cenário é vinculada a métodos C# na Step Definition.
+SpecFlow permite escrever testes no formato BDD, descrevendo o comportamento esperado em uma linguagem próxima da regra de negócio. A funcionalidade de cálculo de juros compostos é descrita em um arquivo `.feature`, e cada frase do cenário é vinculada a métodos C# na Step Definition.
 
 Cenário 1: para empréstimo de `10.000,00`, prazo de `12` meses e taxa de `2,00%`, o valor final esperado é `12.682,42`.
 
