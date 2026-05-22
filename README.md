@@ -55,7 +55,7 @@ Cenário 2: quando o serviço retorna uma lista vazia de pendências, o status e
 
 Print do teste executado:
 
-![Teste com mock object](docs/images/teste-mock-object.png)
+![Teste com mock object](docs/images/test-mockobject.png)
 
 ## SpecFlow
 
@@ -67,4 +67,4 @@ Cenário 2: para empréstimo de `11.937,28`, prazo de `24` meses e taxa de `4,00
 
 Print do teste executado:
 
-![Teste com SpecFlow](docs/images/teste-specflow.png)
+![Teste com SpecFlow](docs/images/test-specflow.png)
