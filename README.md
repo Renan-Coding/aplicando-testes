@@ -43,7 +43,7 @@ Cenário 2: ao informar `212` Fahrenheit, o resultado esperado é `100` Celsius.
 
 Print do teste feito:
 
-![Teste de unidade](images/test-unidade.png)
+![Teste de unidade](docs/images/test-unidade.png)
 
 ## Mock Objects
 
@@ -55,7 +55,7 @@ Cenário 2: quando o serviço retorna uma lista vazia de pendências, o status e
 
 Print do teste executado:
 
-![Teste com mock object](images/test-mockobject.png)
+![Teste com mock object](docs/images/test-mockobject.png)
 
 ## SpecFlow
 
@@ -67,4 +67,4 @@ Cenário 2: para empréstimo de `11.937,28`, prazo de `24` meses e taxa de `4,00
 
 Print do teste executado:
 
-![Teste com SpecFlow](images/test-specflow.png)
+![Teste com SpecFlow](docs/images/test-specflow.png)
