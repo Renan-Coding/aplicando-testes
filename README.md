@@ -4,7 +4,7 @@ Repositório criado para aplicar os três tipos de testes apresentados no tutori
 
 ## Como executar
 
-Para executar os testes é necessário ter o SDK do .NET 5 instalado. Clonar o repositório, acesse a pasta do projeto:
+Para executar os testes é necessário ter o SDK do .NET 5 instalado. Clone o repositório, acesse a pasta do projeto:
 
 ```bash
 git clone https://github.com/Renan-Coding/aplicando-testes.git
