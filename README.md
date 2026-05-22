@@ -1,18 +1,41 @@
-# aplicando-testes
+# Ponderada Aplicando Testes Renan
 
-Repositório criado para aplicar os três tipos de testes apresentados no tutorial "Testes de Software com .NET 5: exemplos de utilização".
+Repositório criado para aplicar os três tipos de testes apresentados no tutorial [Testes de Software com .NET 5: exemplos de utilização](https://renatogroffe.medium.com/testes-de-software-com-net-5-exemplos-de-utiliza%C3%A7%C3%A3o-9b5514119ba2)
 
 ## Como executar
 
+Para executar os testes é necessário ter o SDK do .NET 5 instalado na máquina. Depois de clonar o repositório, acesse a pasta do projeto:
+
+```bash
+git clone https://github.com/Renan-Coding/aplicando-testes.git
+cd aplicando-testes
+```
+
+Execute cada projeto de teste separadamente para validar os três tipos apresentados no tutorial:
+
+Teste de unidade com xUnit:
+
 ```bash
 dotnet test Temperatura.Testes/Temperatura.Testes.csproj
+```
+
+Teste com Mock Object usando Moq e FluentAssertions:
+
+```bash
 dotnet test ConsultaCredito.Testes/ConsultaCredito.Testes.csproj
+```
+
+Teste BDD com SpecFlow:
+
+```bash
 dotnet test APIFinancas.Especificacoes/APIFinancas.Especificacoes.csproj
 ```
 
+Ao final de cada comando, o terminal deve exibir `Passed!`, indicando que todos os testes daquele projeto foram executados com sucesso. Os prints adicionados neste README foram tirados exatamente dessas execuções no terminal.
+
 ## Testes de Unidade
 
-Testes de unidade validam uma menor parte isolada da aplicação. Neste projeto, o método `FahrenheitParaCelsius` é testado com xUnit usando `Theory` e `InlineData`, permitindo executar o mesmo teste para várias entradas e saídas esperadas.
+Testes de unidade validam uma menor parte isolada da aplicação. Aqui, o método `FahrenheitParaCelsius` é testado com xUnit usando `Theory` e `InlineData`, permitindo executar o mesmo teste para várias entradas e saídas esperadas.
 
 Cenário 1: ao informar `32` Fahrenheit, o resultado esperado é `0` Celsius.
 
