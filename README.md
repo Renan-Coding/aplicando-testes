@@ -43,7 +43,7 @@ Cenário 2: ao informar `212` Fahrenheit, o resultado esperado é `100` Celsius.
 
 Print do teste feito:
 
-![Teste de unidade](docs/images/teste-unidade.png)
+![Teste de unidade](docs/images/test-unidade.png)
 
 ## Mock Objects
 
